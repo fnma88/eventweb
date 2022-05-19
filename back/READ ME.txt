@@ -1,0 +1,9 @@
+Pasos:
+	
+Ejecutar npm install
+	
+Crear archivo .env
+	
+Crear base de datos "a mano"
+	
+Ejecutar nodemon
