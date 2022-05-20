@@ -1,4 +1,6 @@
 import React from "react";
+import Carousels from "../components/Carousels";
+import { Carousel, Container, Row } from "react-bootstrap";
 
 function Main() {
   return (
@@ -96,88 +98,9 @@ function Main() {
               </div>
             </div>
           </div>
-          <div className="row">
-            <div className="col-12">
-              <div className="Productos-slideshow owl-carousel">
-                {/* <!-- Single Album --> */}
-                <div className="single-album">
-                  <img src="img/bg-img/a1.jpg" alt="" />
-                  <div className="album-info">
-                    <a href="#">
-                      <h5>The Cure</h5>
-                    </a>
-                    <p>Second Song</p>
-                  </div>
-                </div>
-
-                {/* <!-- Single Album --> */}
-                <div className="single-album">
-                  <img src="img/bg-img/a2.jpg" alt="" />
-                  <div className="album-info">
-                    <a href="#">
-                      <h5>Sam Smith</h5>
-                    </a>
-                    <p>Underground</p>
-                  </div>
-                </div>
-
-                {/* <!-- Single Album --> */}
-                <div className="single-album">
-                  <img src="img/bg-img/a3.jpg" alt="" />
-                  <div className="album-info">
-                    <a href="#">
-                      <h5>Will I am</h5>
-                    </a>
-                    <p>First</p>
-                  </div>
-                </div>
-
-                {/* <!-- Single Album --> */}
-                <div className="single-album">
-                  <img src="img/bg-img/a4.jpg" alt="" />
-                  <div className="album-info">
-                    <a href="#">
-                      <h5>The Cure</h5>
-                    </a>
-                    <p>Second Song</p>
-                  </div>
-                </div>
-
-                {/* <!-- Single Album --> */}
-                <div className="single-album">
-                  <img src="img/bg-img/a5.jpg" alt="" />
-                  <div className="album-info">
-                    <a href="#">
-                      <h5>DJ SMITH</h5>
-                    </a>
-                    <p>The Album</p>
-                  </div>
-                </div>
-
-                {/* <!-- Single Album --> */}
-                <div className="single-album">
-                  <img src="img/bg-img/a6.jpg" alt="" />
-                  <div className="album-info">
-                    <a href="#">
-                      <h5>The Ustopable</h5>
-                    </a>
-                    <p>Unplugged</p>
-                  </div>
-                </div>
-
-                {/* <!-- Single Album --> */}
-                <div className="single-album">
-                  <img src="img/bg-img/a7.jpg" alt="" />
-                  <div className="album-info">
-                    <a href="#">
-                      <h5>Beyonce</h5>
-                    </a>
-                    <p>Songs</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          {/* Comienzo Carrusel */}
+          <Carousels />
+          {/* Fin Carrusel */}
         </div>
       </div>
       {/* <!-- ##### Latest Productos Area End ##### --> */}
@@ -463,21 +386,22 @@ function Main() {
                   <p>Nuevos artistas</p>
                   <h2>Más populares</h2>
                 </div>
+                <div className="row">
+                  {/* <!-- Single Artist --> */}
 
-                {/* <!-- Single Artist --> */}
-                <div
-                  className="single-artists d-flex align-items-center wow fadeInUp"
-                  data-wow-delay="100ms"
-                >
-                  <div className="thumbnail">
-                    <img src="img/bg-img/pa1.jpg" alt="" />
-                  </div>
-                  <div className="content-">
-                    <p>Sam Smith</p>
+                  <div
+                    className="single-artists d-flex align-items-center wow fadeInUp"
+                    data-wow-delay="100ms"
+                  >
+                    <div className="thumbnail">
+                      <img src="img/bg-img/pa1.jpg" alt="" />
+                    </div>
+                    <div className="content-">
+                      <p>Sam Smith</p>
+                    </div>
                   </div>
                 </div>
 
-                {/* <!-- Single Artist --> */}
                 <div
                   className="single-artists d-flex align-items-center wow fadeInUp"
                   data-wow-delay="150ms"

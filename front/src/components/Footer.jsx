@@ -1,34 +1,38 @@
 import React from "react";
-
+import "./footer.css";
 function Footer() {
   return (
-    <footer id="footer-2-cols" class="site-footer">
+    <footer id="footer-2-cols" className="site-footer">
       <div id="footer-container">
         <div id="footer-grid">
-          <div id="left-footer-section" class="footer-section">
+          <div id="left-footer-section" className="footer-section">
             <div id="footer-search">
               <form action="">
-                {/* <input type="search" placeholder=""> */}
+                <input type="search" placeholder="" />
                 <button type="submit">Buscar</button>
               </form>
             </div>
-            <div class="footer-information">
+            <div className="footer-information">
               <p>
-                {/* <img src="https://img.icons8.com/ios-filled/12/999999/marker.png">Zona 4 de Mixco, Guatemala. Ciudad de Guatemala.</p> */}
+                <img src="https://img.icons8.com/ios-filled/12/999999/marker.png" />
+                Zona 4 de Mixco, Guatemala. Ciudad de Guatemala.
               </p>
               <p>
-                {/* <img src="https://img.icons8.com/ios-filled/12/999999/phone.png">(502) 55009217 y (502) 40689735</p> */}
+                <img src="https://img.icons8.com/ios-filled/12/999999/phone.png" />
+                (502) 55009217 y (502) 40689735
               </p>
               <p>
-                {/* <img src="https://img.icons8.com/ios-filled/12/999999/mail.png">info@ticketguatemala.com</p> */}
+                <img src="https://img.icons8.com/ios-filled/12/999999/mail.png" />
+                info@ticketguatemala.com
               </p>
               <p>
-                {/* <img src="https://img.icons8.com/ios-filled/12/999999/clock.png">8:00 AM – 6:00 PM</p> */}
+                <img src="https://img.icons8.com/ios-filled/12/999999/clock.png" />
+                8:00 AM – 6:00 PM
               </p>
             </div>
           </div>
-          <div id="right-footer-section" class="footer-section">
-            <div class="footer-links">
+          <div id="right-footer-section" className="footer-section">
+            <div className="footer-links">
               <ul>
                 <li role="menuitem">
                   <a href="index.php"> Inicio</a>
@@ -52,14 +56,14 @@ function Footer() {
         <div id="copyright-information">
           <div id="footer-logo-section">
             <div id="footer-logo">
-              {/* <img src="img/core-img/logo.png" alt=""> */}
+              <img src="img/core-img/logo.png" alt="" />
             </div>
           </div>
           <div id="copyright-text">
             &copy; Copyright{" "}
             <script>document.write(new Date().getFullYear());</script> Todos los
             derechos reservados{" "}
-            <i class="fa fa-angellist" aria-hidden="true"></i> por{" "}
+            <i className="fa fa-angellist" aria-hidden="true"></i> por{" "}
             <a href="https://ceandb.com" target="_blank">
               CE&B
             </a>

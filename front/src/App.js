@@ -1,4 +1,5 @@
-import "./App.css";
+import "./index.css";
+import "./style.css.map";
 import { Route, Routes } from "react-router-dom";
 // import { useSelector, useDispatch } from "react-redux";
 // import { useEffect } from "react";
@@ -8,12 +9,13 @@ import Elements from "./views/Elements";
 import Login from "./views/Login";
 import Product from "./views/Product";
 import Footer from "./components/Footer";
-import Header from "./components/Header";
+import NavBar from "./components/NavBar";
 import Event from "./views/Event";
+
 function App() {
   return (
     <div>
-      <Header />
+      <NavBar />
       <div className="App">
         <Routes>
           <Route path="/" element={<Main />} />
