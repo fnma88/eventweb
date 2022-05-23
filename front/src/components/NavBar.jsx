@@ -1,23 +1,60 @@
-import React from "react";
-// import "./header.css";
-import { Container, Navbar, Nav, NavDropdown } from "react-bootstrap";
+import React, { useState, useEffect } from "react";
+import "./header.css";
+import { MenuItems } from "./MenuItems";
+import NavLink, { Link } from "react-router-dom";
+import {
+  Container,
+  Navbar,
+  Nav,
+  NavDropdown,
+  Offcanvas,
+  Form,
+  FormControl,
+  Button,
+} from "react-bootstrap";
 
 function NavBar() {
+  const [navBar, setNavBar] = useState(false);
+
+  const scroll = () => {
+    if (window.scrollY >= 80) {
+      setNavBar(true);
+    } else setNavBar(false);
+  };
+
+  window.addEventListener("scroll", scroll);
+
   return (
     <>
-      <Navbar
-        className=""
+      <nav className={navBar ? "navBar active" : "navBar"}>
+        <a className="navBarLogo" href="/">
+          <img src="img/core-img/logo.png" alt="" />
+        </a>
+        <ul>
+          {MenuItems.map((item, index) => {
+            return (
+              <li>
+                <a className={item.cName} href={item.url}>
+                  {item.title}
+                </a>
+              </li>
+            );
+          })}
+        </ul>
+      </nav>
+      {/* <Navbar
+        className={navBar ? "navBar active" : "navBar"}
         id=""
         collapseOnSelect
         expand="lg"
-        bg="dark"
+        // bg="dark"
         sticky="top"
         variant="dark"
       >
         <Container className="">
-          <Navbar.Brand href="#home">
+          <Navbar.Brand>
             {" "}
-            <a href="index.php" class="nav-brand">
+            <a href="index.php" className="">
               <img src="img/core-img/logo.png" alt="" />
             </a>
           </Navbar.Brand>
@@ -52,7 +89,7 @@ function NavBar() {
             </Nav>
           </Navbar.Collapse>
         </Container>
-      </Navbar>
+      </Navbar> */}
     </>
   );
 }

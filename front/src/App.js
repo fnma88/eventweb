@@ -15,8 +15,8 @@ import Event from "./views/Event";
 function App() {
   return (
     <div>
-      <NavBar />
       <div className="App">
+        <NavBar />
         <Routes>
           <Route path="/" element={<Main />} />
           <Route path="/blog" element={<Blog />} />
