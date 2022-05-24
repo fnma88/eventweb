@@ -24,7 +24,7 @@ function NavBar() {
      <Navbar
          className={
             navBar
-              ? "navBar active navbar fixed-top navbar-dark p-md-3"
+              ? "navBar activeNav navbar fixed-top navbar-dark p-md-3"
               : "navBar navbar fixed-top navbar-dark p-md-3"}
         id=""
         collapseOnSelect

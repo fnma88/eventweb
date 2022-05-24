@@ -4,9 +4,8 @@ function Carousels() {
   return (
     <>
       <Container>
-        <div class="Productos-slideshow owl-carousel">
-          <Carousel>
-            <Carousel.Item interval={1750}>
+          <Carousel controls="false" indicators={false} pause="hover">
+          <Carousel.Item interval={3000}>
               <Row>
                 <div className="col ">
                   <img
@@ -55,7 +54,7 @@ function Carousels() {
                 </div>
               </Row>
             </Carousel.Item>
-            <Carousel.Item interval={1002222222222220}>
+            <Carousel.Item interval={3000}>
               <Row>
                 <div className="col ">
                   <img
@@ -104,7 +103,7 @@ function Carousels() {
                 </div>
               </Row>
             </Carousel.Item>
-            <Carousel.Item interval={1750}>
+            <Carousel.Item interval={3000}>
               <Row>
                 <div className="col">
                   <img
@@ -154,7 +153,6 @@ function Carousels() {
               </Row>
             </Carousel.Item>
           </Carousel>
-        </div>
       </Container>
     </>
   );
