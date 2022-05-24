@@ -21,7 +21,7 @@ function Event() {
             <div className="col-12 col-md-6 col-lg-4">
               <div className="single-event-area mb-30">
                 <div className="event-thumbnail">
-                  {/* <img src="img/bg-img/e1.jpg" alt=""> */}
+                  <img src="img/bg-img/e1.jpg" alt=""/>
                 </div>
                 <div className="event-text">
                   <h4>Dj Night Party</h4>
@@ -44,7 +44,7 @@ function Event() {
             <div className="col-12 col-md-6 col-lg-4">
               <div className="single-event-area mb-30">
                 <div className="event-thumbnail">
-                  {/* <img src="img/bg-img/e2.jpg" alt=""> */}
+                  <img src="img/bg-img/e2.jpg" alt=""/>
                 </div>
                 <div className="event-text">
                   <h4>The Mission</h4>
@@ -67,7 +67,7 @@ function Event() {
             <div className="col-12 col-md-6 col-lg-4">
               <div className="single-event-area mb-30">
                 <div className="event-thumbnail">
-                  {/* <img src="img/bg-img/e3.jpg" alt=""> */}
+                  <img src="img/bg-img/e3.jpg" alt=""/>
                 </div>
                 <div className="event-text">
                   <h4>Planet ibiza</h4>
@@ -90,7 +90,7 @@ function Event() {
             <div className="col-12 col-md-6 col-lg-4">
               <div className="single-event-area mb-30">
                 <div className="event-thumbnail">
-                  {/* <img src="img/bg-img/e4.jpg" alt=""> */}
+                  <img src="img/bg-img/e4.jpg" alt=""/>
                 </div>
                 <div className="event-text">
                   <h4>Dj Night Party</h4>
@@ -113,7 +113,7 @@ function Event() {
             <div className="col-12 col-md-6 col-lg-4">
               <div className="single-event-area mb-30">
                 <div className="event-thumbnail">
-                  {/* <img src="img/bg-img/e5.jpg" alt=""> */}
+                  <img src="img/bg-img/e5.jpg" alt=""/>
                 </div>
                 <div className="event-text">
                   <h4>The Mission</h4>
@@ -136,7 +136,7 @@ function Event() {
             <div className="col-12 col-md-6 col-lg-4">
               <div className="single-event-area mb-30">
                 <div className="event-thumbnail">
-                  {/* <img src="img/bg-img/e6.jpg" alt=""> */}
+                  <img src="img/bg-img/e6.jpg" alt=""/>
                 </div>
                 <div className="event-text">
                   <h4>Planet ibiza</h4>
@@ -159,7 +159,7 @@ function Event() {
             <div className="col-12 col-md-6 col-lg-4">
               <div className="single-event-area mb-30">
                 <div className="event-thumbnail">
-                  {/* <img src="img/bg-img/e7.jpg" alt=""> */}
+                  <img src="img/bg-img/e7.jpg" alt=""/>
                 </div>
                 <div className="event-text">
                   <h4>Dj Night Party</h4>
@@ -182,7 +182,7 @@ function Event() {
             <div className="col-12 col-md-6 col-lg-4">
               <div className="single-event-area mb-30">
                 <div className="event-thumbnail">
-                  {/* <img src="img/bg-img/e8.jpg" alt=""> */}
+                  <img src="img/bg-img/e8.jpg" alt=""/>
                 </div>
                 <div className="event-text">
                   <h4>The Mission</h4>
@@ -205,7 +205,7 @@ function Event() {
             <div className="col-12 col-md-6 col-lg-4">
               <div className="single-event-area mb-30">
                 <div className="event-thumbnail">
-                  {/* <img src="img/bg-img/e9.jpg" alt=""> */}
+                  <img src="img/bg-img/e9.jpg" alt=""/>
                 </div>
                 <div className="event-text">
                   <h4>Planet ibiza</h4>
@@ -250,7 +250,7 @@ function Event() {
                 </div>
                 <div className="Nosotrosletter-form">
                   <form action="#">
-                    {/* <input type="search" name="search" id="NosotrosletterSearch" placeholder="E-mail"> */}
+                    <input type="search" name="search" id="NosotrosletterSearch" placeholder="E-mail"/>
                     <button type="submit" className="btn oneMusic-btn">
                       Subscribete <i className="fa fa-angle-double-right"></i>
                     </button>
@@ -275,21 +275,13 @@ function Event() {
                     <p>Super recumendado </p>
                     <div className="testimonial-info d-flex align-items-center">
                       <div className="testimonial-thumb">
-                        {/* <img src="img/bg-img/t1.jpg" alt=""> */}
+                        <img src="img/bg-img/t1.jpg" alt=""/>
                       </div>
                       <p>William Smith, Cliente</p>
                     </div>
                   </div>
                   {/* <!-- Single Slide --> */}
-                  <div className="single-slide">
-                    <p>Super recumendados todos </p>
-                    <div className="testimonial-info d-flex align-items-center">
-                      <div className="testimonial-thumb">
-                        {/* <img src="img/bg-img/t1.jpg" alt=""> */}
-                      </div>
-                      <p>Nazrul Islam, Developer</p>
-                    </div>
-                  </div>
+                
                 </div>
               </div>
             </div>

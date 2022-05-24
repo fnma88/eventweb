@@ -1,10 +1,16 @@
 import React from "react";
 
-function Productos() {
+function Product() {
+
+  return(
+
   <>
     <section
       className="breadcumb-area bg-img bg-overlay"
-      style="background-image: url(img/bg-img/breadcumb3.jpg);"
+      style={{ 
+        backgroundImage: `url("img/bg-img/breadcumb3.jpg")` 
+      }} 
+    
     >
       <div className="bradcumbContent">
         <p>Mira lo nuevo</p>
@@ -355,14 +361,16 @@ function Productos() {
         <div className="row">
           <div className="col-12">
             <div className="adds">
-              <a href="#">{/* <img src="img/bg-img/add3.gif" alt=/""> */}</a>
+              <a href="#"><img src="img/bg-img/add3.gif" alt=""/> </a>
             </div>
           </div>
         </div>
       </div>
     </div>
     {/* <!-- ##### Add Area End ##### --> */}
-  </>;
+  </>
+  )
+
 }
 
-export default Productos;
+export default Product;

@@ -11,6 +11,8 @@ import Product from "./views/Product";
 import Footer from "./components/Footer";
 import NavBar from "./components/NavBar";
 import Event from "./views/Event";
+import AboutUs from "./views/AboutUs";
+import Contact from "./views/Contact";
 
 function App() {
   return (
@@ -25,6 +27,8 @@ function App() {
           <Route path="/event" element={<Event />} />
           <Route path="/login" element={<Login />} />
           <Route path="/product" element={<Product />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/about" element={<AboutUs />} />
         </Routes>
       </div>
       <Footer />

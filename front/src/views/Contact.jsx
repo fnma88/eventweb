@@ -1,288 +1,130 @@
-import React from "react";
+import React from 'react'
 
 function Contact() {
   return (
-    <>
-      <section
-        class="breadcumb-area bg-img bg-overlay"
-        style="background-image: url(img/bg-img/breadcumb3.jpg);"
-      >
-        <div class="bradcumbContent">
-          <p>See what’s new</p>
-          <h2>Nosotros</h2>
+   <>
+     <section className="breadcumb-area bg-img bg-overlay"      style={{ 
+        backgroundImage: `url("img/bg-img/breadcumb.jpg")` 
+      }} >
+        <div className="bradcumbContent">
+            <p>Cotizaciones</p>
+            <h2>Dónde nos ecuentras?</h2>
         </div>
-      </section>
-      <div class="blog-area section-padding-100">
-        <div class="container">
-          <div class="row">
-            <div class="col-12 col-lg-9">
-              {/* <!-- Single Post Start --> */}
-              <div
-                class="single-blog-post mb-100 wow fadeInUp"
-                data-wow-delay="100ms"
-              >
-                {/* <!-- Post Thumb --> */}
-                <div class="blog-post-thumb mt-30">
-                  <a href="#">
-                    {/* <img src="img/bg-img/blog1.jpg" alt=""> */}
-                  </a>
-                  {/* <!-- Post Date --> */}
-                  <div class="post-date">
-                    <span>15</span>
-                    <span>June ‘18</span>
-                  </div>
+    </section>
+    {/* <!-- ##### Breadcumb Area End ##### --> */}
+
+    {/* <!-- ##### Contactos Area Start ##### --> */}
+    <section className="Contactos-area section-padding-100-0">
+        <div className="container">
+            <div className="row">
+
+                <div className="col-12 col-lg-3">
+                    <div className="Contactos-content mb-100">
+                        {/* <!-- Title --> */}
+                        <div className="Contactos-title mb-50">
+                            <h5>Contactos Info</h5>
+                        </div>
+
+                        {/* <!-- Single Contactos Info --> */}
+                        <div className="single-Contactos-info d-flex align-items-center">
+                            <div className="icon mr-30">
+                                <span className="icon-placeholder"></span>
+                            </div>
+                            <p>Zona 4 de Mixco, Guatemala. Ciudad de Guatemala.</p>
+                        </div>
+
+                        {/* <!-- Single Contactos Info --> */}
+                        <div className="single-Contactos-info d-flex align-items-center">
+                            <div className="icon mr-30">
+                                <span className="icon-smartphone"></span>
+                            </div>
+                            <p>(502) 55009217 y (502) 40689735</p>
+                        </div>
+
+                        {/* <!-- Single Contactos Info --> */}
+                        <div className="single-Contactos-info d-flex align-items-center">
+                            <div className="icon mr-30">
+                                <span className="icon-mail"></span>
+                            </div>
+                            <p>info@ticketguatemala.com</p>
+                        </div>
+
+                        {/* <!-- Contactos Social Info --> */}
+                        <div className="Contactos-social-info mt-50">
+                            <a className='m-1' href="#" data-toggle="tooltip" data-placement="top" title="Pinterest"><i className="fa fa-pinterest" aria-hidden="true"></i></a>
+                            <a className='m-1' href="#" data-toggle="tooltip" data-placement="top" title="Facebook"><i className="fa fa-facebook" aria-hidden="true"></i></a>
+                            <a className='m-1' href="#" data-toggle="tooltip" data-placement="top" title="Twitter"><i className="fa fa-twitter" aria-hidden="true"></i></a>
+                            <a className='m-1' href="#" data-toggle="tooltip" data-placement="top" title="Dribbble"><i className="fa fa-dribbble" aria-hidden="true"></i></a>
+                            <a className='m-1' href="#" data-toggle="tooltip" data-placement="top" title="Behance"><i className="fa fa-behance" aria-hidden="true"></i></a>
+                            <a className='m-1' href="#" data-toggle="tooltip" data-placement="top" title="Linkedin"><i className="fa fa-linkedin" aria-hidden="true"></i></a>
+                        </div>
+
+                    </div>
                 </div>
 
-                {/* <!-- Blog Content --> */}
-                <div class="blog-content">
-                  {/* <!-- Post Title --> */}
-                  <a href="#" class="post-title">
-                    5 Festivals you shouldn’t miss this summer
-                  </a>
-                  {/* <!-- Post Meta --> */}
-                  <div class="post-meta d-flex mb-30">
-                    <p class="post-author">
-                      By<a href="#"> Admin</a>
-                    </p>
-                    <p class="tags">
-                      in<a href="#"> Eventos</a>
-                    </p>
-                    <p class="tags">
-                      <a href="#">2 Comments</a>
-                    </p>
-                  </div>
-                  {/* <!-- Post Excerpt --> */}
-                  <p>
-                    Pellentesque sit amet velit a libero viverra porta non eu
-                    justo. Vivamus mollis metus sem, ac sodales dui lobortis.
-                    Pellentesque sit amet velit a libero viverra porta non eu
-                    justo. Vivamus mollis metus sem, ac sodales dui lobortis.
-                  </p>
-                </div>
-              </div>
-
-              {/* <!-- Single Post Start --> */}
-              <div
-                class="single-blog-post mb-100 wow fadeInUp"
-                data-wow-delay="100ms"
-              >
-                {/* <!-- Post Thumb --> */}
-                <div class="blog-post-thumb mt-30">
-                  <a href="#">
-                    {/* <img src="img/bg-img/blog2.jpg" alt=""> */}
-                  </a>
-                  {/* <!-- Post Date --> */}
-                  <div class="post-date">
-                    <span>15</span>
-                    <span>June ‘18</span>
-                  </div>
+                <div className="col-12 col-lg-9">
+                    {/* <!-- ##### Google Maps ##### --> */}
+                    <div className="map-area mb-100">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22236.40558254599!2d-118.25292394686001!3d34.057682914027104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c75ddc27da13%3A0xe22fdf6f254608f4!2z4Kay4Ka4IOCmj-CmnuCnjeCmnOCnh-CmsuCnh-CmuCwg4KaV4KeN4Kav4Ka-4Kay4Ka_4Kar4KeL4Kaw4KeN4Kao4Ka_4Kav4Ka84Ka-LCDgpq7gpr7gprDgp43gppXgpr_gpqgg4Kav4KeB4KaV4KeN4Kak4Kaw4Ka-4Ka34KeN4Kaf4KeN4Kaw!5e0!3m2!1sbn!2sbd!4v1532328708137" allowfullscreen></iframe>
+                    </div>
                 </div>
 
-                {/* <!-- Blog Content --> */}
-                <div class="blog-content">
-                  {/* <!-- Post Title --> */}
-                  <a href="#" class="post-title">
-                    5 Festivals you shouldn’t miss this summer
-                  </a>
-                  {/* <!-- Post Meta --> */}
-                  <div class="post-meta d-flex mb-30">
-                    <p class="post-author">
-                      By<a href="#"> Admin</a>
-                    </p>
-                    <p class="tags">
-                      in<a href="#"> Eventos</a>
-                    </p>
-                    <p class="tags">
-                      <a href="#">2 Comments</a>
-                    </p>
-                  </div>
-                  {/* <!-- Post Excerpt --> */}
-                  <p>
-                    Pellentesque sit amet velit a libero viverra porta non eu
-                    justo. Vivamus mollis metus sem, ac sodales dui lobortis.
-                    Pellentesque sit amet velit a libero viverra porta non eu
-                    justo. Vivamus mollis metus sem, ac sodales dui lobortis.
-                  </p>
-                </div>
-              </div>
+            </div>
+        </div>
+    </section>
+    {/* <!-- ##### Contactos Area End ##### --> */}
 
-              {/* <!-- Single Post Start --> */}
-              <div
-                class="single-blog-post mb-100 wow fadeInUp"
-                data-wow-delay="100ms"
-              >
-                {/* <!-- Post Thumb --> */}
-                <div class="blog-post-thumb mt-30">
-                  <a href="#">
-                    {/* <img src="img/bg-img/blog3.jpg" alt=""> */}
-                  </a>
-                  {/* <!-- Post Date --> */}
-                  <div class="post-date">
-                    <span>15</span>
-                    <span>June ‘18</span>
-                  </div>
+    {/* <!-- ##### Contactos Area Start ##### --> */}
+    <section className="Contactos-area section-padding-0-100">
+        <div className="container">
+            <div className="row">
+                <div className="col-12">
+                    <div className="section-heading">
+                        <p>Necesitas más información?</p>
+                        <h2>Escríbenos</h2>
+                    </div>
                 </div>
-
-                {/* <!-- Blog Content --> */}
-                <div class="blog-content">
-                  {/* <!-- Post Title --> */}
-                  <a href="#" class="post-title">
-                    5 Festivals you shouldn’t miss this summer
-                  </a>
-                  {/* <!-- Post Meta --> */}
-                  <div class="post-meta d-flex mb-30">
-                    <p class="post-author">
-                      By<a href="#"> Admin</a>
-                    </p>
-                    <p class="tags">
-                      in<a href="#"> Eventos</a>
-                    </p>
-                    <p class="tags">
-                      <a href="#">2 Comments</a>
-                    </p>
-                  </div>
-                  {/* <!-- Post Excerpt --> */}
-                  <p>
-                    Pellentesque sit amet velit a libero viverra porta non eu
-                    justo. Vivamus mollis metus sem, ac sodales dui lobortis.
-                    Pellentesque sit amet velit a libero viverra porta non eu
-                    justo. Vivamus mollis metus sem, ac sodales dui lobortis.
-                  </p>
-                </div>
-              </div>
-
-              {/* <!-- Pagination --> */}
-              <div
-                class="oneMusic-pagination-area wow fadeInUp"
-                data-wow-delay="300ms"
-              >
-                <nav>
-                  <ul class="pagination">
-                    <li class="page-item active">
-                      <a class="page-link" href="#">
-                        01
-                      </a>
-                    </li>
-                    <li class="page-item">
-                      <a class="page-link" href="#">
-                        02
-                      </a>
-                    </li>
-                    <li class="page-item">
-                      <a class="page-link" href="#">
-                        03
-                      </a>
-                    </li>
-                  </ul>
-                </nav>
-              </div>
             </div>
 
-            <div class="col-12 col-lg-3">
-              <div class="blog-sidebar-area">
-                {/* <!-- Widget Area --> */}
-                <div class="single-widget-area mb-30">
-                  <div class="widget-title">
-                    <h5>Categories</h5>
-                  </div>
-                  <div class="widget-content">
-                    <ul>
-                      <li>
-                        <a href="#">Music</a>
-                      </li>
-                      <li>
-                        <a href="#">Eventos &amp; Press</a>
-                      </li>
-                      <li>
-                        <a href="#">Festivals</a>
-                      </li>
-                      <li>
-                        <a href="#">Lyfestyle</a>
-                      </li>
-                      <li>
-                        <a href="#">Uncategorized</a>
-                      </li>
-                    </ul>
-                  </div>
+            <div className="row">
+                <div className="col-12">
+                    {/* <!-- Contactos Form Area --> */}
+                    <div className="Contactos-form-area">
+                        <form action="#" method="post">
+                            <div className="row">
+                                <div className="col-md-6 col-lg-4">
+                                    <div className="form-group">
+                                        <input type="text" className="form-control" id="name" placeholder="Nombre"/>
+                                    </div>
+                                </div>
+                                <div className="col-md-6 col-lg-4">
+                                    <div className="form-group">
+                                        <input type="email" className="form-control" id="email" placeholder="E-mail"/>
+                                    </div>
+                                </div>
+                                <div className="col-lg-4">
+                                    <div className="form-group">
+                                        <input type="text" className="form-control" id="subject" placeholder="Asunto"/>
+                                    </div>
+                                </div>
+                                <div className="col-12">
+                                    <div className="form-group">
+                                        <textarea name="message" className="form-control" id="message" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                                    </div>
+                                </div>
+                                <div className="col-12 text-center">
+                                    <button className="btn oneMusic-btn mt-30" type="submit">Enviar <i className="fa fa-angle-double-right"></i></button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
                 </div>
-
-                {/* <!-- Widget Area --> */}
-                <div class="single-widget-area mb-30">
-                  <div class="widget-title">
-                    <h5>Archive</h5>
-                  </div>
-                  <div class="widget-content">
-                    <ul>
-                      <li>
-                        <a href="#">February 2018</a>
-                      </li>
-                      <li>
-                        <a href="#">March 2018</a>
-                      </li>
-                      <li>
-                        <a href="#">April 2018</a>
-                      </li>
-                      <li>
-                        <a href="#">May 2018</a>
-                      </li>
-                      <li>
-                        <a href="#">June 2018</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-
-                {/* <!-- Widget Area --> */}
-                <div class="single-widget-area mb-30">
-                  <div class="widget-title">
-                    <h5>Tags</h5>
-                  </div>
-                  <div class="widget-content">
-                    <ul class="tags">
-                      <li>
-                        <a href="#">music</a>
-                      </li>
-                      <li>
-                        <a href="#">Eventos</a>
-                      </li>
-                      <li>
-                        <a href="#">artists</a>
-                      </li>
-                      <li>
-                        <a href="#">press</a>
-                      </li>
-                      <li>
-                        <a href="#">mp3</a>
-                      </li>
-                      <li>
-                        <a href="#">videos</a>
-                      </li>
-                      <li>
-                        <a href="#">concerts</a>
-                      </li>
-                      <li>
-                        <a href="#">performers</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-
-                {/* <!-- Widget Area --> */}
-                <div class="single-widget-area mb-30">
-                  <a href="#">{/* <img src="img/bg-img/add.gif" alt=""> */}</a>
-                </div>
-
-                {/* <!-- Widget Area --> */}
-                <div class="single-widget-area mb-30">
-                  <a href="#">{/* <img src="img/bg-img/add2.gif" alt=""> */}</a>
-                </div>
-              </div>
             </div>
-          </div>
         </div>
-      </div>
-    </>
-  );
+    </section>
+   
+   </>
+  )
 }
 
-export default Contact;
+export default Contact
