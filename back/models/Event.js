@@ -8,6 +8,8 @@ const eventSchema = new Schema(
     description: { type: String, minlength: 1, required: true },
     date: { type: Date, required: true },
     place: { type: Number, required: true },
+    headerimage: { type: String, minlength: 1, required: false },
+    eventmap: { type: String, minlength: 1, required: false },
   },
   { timestamps: true },
   // slugify(console.log(this.name), {
