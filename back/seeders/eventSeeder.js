@@ -32,7 +32,7 @@ module.exports = async () => {
     headerimage: "eventoc.jpg",
     eventmap: "mapa.jpg",
   });
-  events.push(eventB);
+  events.push(eventC);
 
   await Event.create(events);
   console.log("Se corrió el seeder de Events.");
