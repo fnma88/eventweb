@@ -6,7 +6,7 @@ function Blog() {
       {/* // <!-- ##### Breadcumb Area Start ##### --> */}
       <section
         className="breadcumb-area bg-img bg-overlay"
-        style={{ backgroundImage: "url(img/bg-img/breadcumb.jpg);" }}
+        style={{ backgroundImage: "url(img/bg-img/breadcumb.jpg)" }}
       >
         <div className="bradcumbContent">
           <p>Cotizaciones</p>
