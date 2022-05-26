@@ -359,7 +359,7 @@ function Product() {
     <div className="add-area mb-100">
       <div className="container">
         <div className="row">
-          <div className="col-12">
+          <div className="col-12 d-flex justify-content-center">
             <div className="adds">
               <a href="#"><img src="img/bg-img/add3.gif" alt=""/> </a>
             </div>

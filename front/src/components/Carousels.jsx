@@ -8,7 +8,7 @@ function Carousels() {
           <Carousel.Item interval={3000}>
             <Row>
               <div className="col ">
-                <img className="d-block vw-75" src="img/bg-img/a2.jpg" alt="" />
+                <img className="d-block w-100" src="img/bg-img/a2.jpg" alt="" />
                 <div className="single-album">
                   <div className="album-info justify-content-center ">
                     <a href="#">
