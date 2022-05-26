@@ -7,7 +7,8 @@ module.exports = async () => {
   const eventA = new Event({
     name: "Event A",
     description: "Event A de la gira A",
-    date: 01 / 12 / 2022,
+    date: "30/12/2022",
+    time: "22:00",
     place: "Arena A",
     headerimage: "eventoa.jpg",
     eventmap: "mapa.jpg",
@@ -17,7 +18,8 @@ module.exports = async () => {
   const eventB = new Event({
     name: "Event B",
     description: "Event B de la gira B",
-    date: 15 / 12 / 2022,
+    date: "01/12/2022",
+    time: "21:00",
     place: "Arena B",
     headerimage: "eventob.jpg",
     eventmap: "mapa.jpg",
@@ -27,7 +29,8 @@ module.exports = async () => {
   const eventC = new Event({
     name: "Event C",
     description: "Event C de la gira C",
-    date: 31 / 12 / 2022,
+    date: "15/12/2022",
+    time: "20:00",
     place: "Arena C",
     headerimage: "eventoc.jpg",
     eventmap: "mapa.jpg",
