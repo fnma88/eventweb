@@ -8,6 +8,7 @@ const ticketSchema = new Schema(
     description: { type: String, minlength: 1, required: true },
     price: { type: Number, min: 1, required: true },
     stock: { type: Number, required: true },
+    number: { type: Number, required: true },
   },
   { timestamps: true },
   // slugify(console.log(this.name), {
