@@ -20,28 +20,35 @@ function Event() {
       {/* <!-- ##### Eventos Area Start ##### --> */}
       <div className="Eventos-area section-padding-100">
         <div className="container">
+          <div className="row">
+            <div className="col-4">
+              <EventInfor fecha={"29-10"} />
+            </div>
+            <div className="col-4">
+              <EventInfor fecha={"30-10"} />
+            </div>
+            <div className="col-4">
+              <EventInfor fecha={"31-10"} />
+            </div>
+          </div>
           <div className="row d-flex justify-content-center">
             <div className="col m-1">
               <TicketEvent imageTicket={image} />
             </div>
             <div className="col m-1">
-              <EventInfor fecha={"31-10"} />
+              <Ticket />
               <Ticket />
               <Ticket />
             </div>
             <div className="col m-1">
-              <EventInfor fecha={"30-10"} />
-              <Ticket />
-              <Ticket />
-            </div>
-          </div>
-          <div className="row mt-5">
-            <div className="d-flex justify-content-center">
               <img
                 class=""
                 src="https://tickantel.cdn.antel.net.uy/media/Distribucion/40000906/d08993b9_3f73_4e50_88f0_ea54766aef72.jpg"
               />
             </div>
+          </div>
+          <div className="row mt-5">
+            <div className="d-flex justify-content-center"></div>
           </div>
         </div>
       </div>
