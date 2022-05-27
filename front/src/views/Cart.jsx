@@ -9,7 +9,7 @@ function Cart() {
         style={{ backgroundImage: "url(img/bg-img/breadcumb3.jpg)" }}
       >
         <div className="bradcumbContent">
-          <h2>TU CARRITO</h2>
+          <h2>CARRITO</h2>
         </div>
       </div>
       {/* <!-- ##### Breadcumb Area End ##### --> */}
