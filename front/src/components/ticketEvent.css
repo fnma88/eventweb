@@ -16,6 +16,14 @@ img {
   position: relative;
   background-color: black;
 }
+.ticket2 {
+  width: 500px;
+  height: 200px;
+  background-color: white;
+  margin: 25px auto;
+  position: relative;
+  background-color: black;
+}
 .holes-top {
   height: 50px;
   width: 50px;
@@ -46,6 +54,36 @@ img {
   margin: 25px;
   border: 1px dashed #aaa;
 }
+.holes-top2 {
+  height: 50px;
+  width: 50px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  margin-left: -25px;
+  top: -25px;
+}
+.holes-top2:before,
+.holes-top2:after {
+  content: "";
+  height: 50px;
+  width: 50px;
+  background-color: white;
+  position: absolute;
+  border-radius: 50%;
+}
+.holes-top2:before {
+  left: -240px;
+}
+.holes-top2:after {
+  left: 240px;
+}
+.holes-lower {
+  position: relative;
+  margin: 25px;
+  border: 1px dashed #aaa;
+}
 .holes-lower:before,
 .holes-lower:after {
   content: "";
@@ -63,8 +101,35 @@ img {
   top: 60px;
   left: 240px;
 }
+.holes-lower2 {
+  height: 50px;
+  width: 50px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  margin-left: -25px;
+  top: 180px;
+}
+.holes-lower2:before,
+.holes-lower2:after {
+  content: "";
+  height: 50px;
+  width: 50px;
+  background-color: white;
+  position: absolute;
+  border-radius: 50%;
+}
+.holes-lower2:before {
+  top: -0px;
+  left: -240px;
+}
+.holes-lower2:after {
+  top: -0px;
+  left: 240px;
+}
 .titleTicket {
-  padding: 50px 25px 10px;
+  padding: 30px 25px 10px;
 }
 .cinema {
   color: #aaa;
@@ -73,7 +138,12 @@ img {
 .movie-title {
   font-size: 25px;
 }
-
-.serial {
-  padding: 25px;
+.holes-lowerdashed {
+  position: relative;
+  margin: 25px;
+  border: 1px dashed #aaa;
+  transform: rotate(90deg);
+  width: 150px;
+  top: -122px;
+  left: 368px;
 }
