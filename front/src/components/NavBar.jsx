@@ -1,12 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./header.css";
 import NavLink, { Link } from "react-router-dom";
-import {
-  Container,
-  Navbar,
-  Nav,
-  NavDropdown,
-} from "react-bootstrap";
+import { Container, Navbar, Nav, NavDropdown } from "react-bootstrap";
 
 function NavBar() {
   const [navBar, setNavBar] = useState(false);
@@ -21,11 +16,12 @@ function NavBar() {
 
   return (
     <>
-     <Navbar
-         className={
-            navBar
-              ? "navBar activeNav navbar fixed-top navbar-dark p-md-3"
-              : "navBar navbar fixed-top navbar-dark p-md-3"}
+      <Navbar
+        className={
+          navBar
+            ? "navBar activeNav navbar fixed-top navbar-dark p-md-3"
+            : "navBar navbar fixed-top navbar-dark p-md-3"
+        }
         id=""
         collapseOnSelect
         expand="lg"
@@ -33,34 +29,48 @@ function NavBar() {
         // sticky="top"
         variant="dark"
       >
-        <Container className="">
-          <Navbar.Brand>
-            {" "}
-            <Link to="/" className="">
-              <img src="img/core-img/logo.png" alt="" />
-            </Link>
-          </Navbar.Brand>
-          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-          <Navbar.Collapse id="responsive-navbar-nav">
-            <Nav className="me-auto pt-2">
-              <Link className="text-white m-3" to="/">Inicio</Link>
-              <Link className="text-white m-3" to="product">Productos</Link>
-              <Link className="text-white m-3" to="events">Eventos</Link>
-              <Link className="text-white m-3" to="about">Nosotros</Link>
-              <Link className="text-white m-3" to="contact">Contactos</Link>
-            
-            </Nav>
-         
-              <Link  className="text-white m-3" to="#deets">
+        <Navbar.Brand>
+          {" "}
+          <Link to="/" className="">
+            <img src="img/core-img/logo.png" alt="" />
+          </Link>
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav p-3" />
+        <Navbar.Collapse id="responsive-navbar-nav">
+          <div className={navBar ? " pt-2 activeNav2 row" : "pt-2 row"}>
+            <div className="col m-3">
+              <Link className="text-white " to="/">
+                Inicio
+              </Link>
+            </div>
+            <div className="col m-3">
+              <Link className="text-white " to="events">
+                Eventos
+              </Link>
+            </div>
+            <div className="col m-3">
+              <Link className="text-white" to="about">
+                Nosotros
+              </Link>
+            </div>
+            <div className="col m-3">
+              <Link className="text-white " to="contact">
+                Contactos
+              </Link>
+            </div>
+            <div className="col m-3">
+              <Link className="text-white " to="#deets">
                 Login
               </Link>
-                <Link eventKey={2} className="text-white"  to="/cart">
-               <i class="fa-solid fa-cart-shopping">2</i>
+            </div>
+            <div className="col m-3">
+              <Link eventKey={2} className="text-white" to="/cart">
+                <i class="fa-solid fa-cart-shopping">2</i>
               </Link>
-            
-          </Navbar.Collapse>
-        </Container>
-      </Navbar>  
+            </div>
+          </div>
+        </Navbar.Collapse>
+      </Navbar>
     </>
   );
 }

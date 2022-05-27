@@ -4,10 +4,15 @@
   /* position: sticky; */
   height: 80px;
   /* z-index: 999; */
-  min-width: 480px
+  min-width: 480px;
 }
 .activeNav {
-  background-color: black!important;
+  background-color: black;
   top: 0;
   height: 80px;
+}
+.activeNav2 {
+  background-color: black;
+  --bs--gutter-x: 2rem;
+  /* margin-top: 10px; */
 }
