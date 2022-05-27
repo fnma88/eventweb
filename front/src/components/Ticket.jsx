@@ -1,9 +1,8 @@
 import React from "react";
-
 function Ticket() {
   return (
     <div className="single-event-area my-3">
-      <div className="event-thumbnail"></div>
+      <div className=""></div>
       <div className="event-text">
         <h4>Tipo de entrada </h4>
         <div className="event-meta-data">

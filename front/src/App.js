@@ -14,6 +14,7 @@ import Events from "./views/Events";
 import Event from "./views/Event";
 import AboutUs from "./views/AboutUs";
 import Contact from "./views/Contact";
+import Cart from "./views/Cart";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
           <Route path="/events" element={<Events />} />
           <Route path="/event" element={<Event />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/cart" element={<Cart />} />
           <Route path="/product" element={<Product />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/about" element={<AboutUs />} />
