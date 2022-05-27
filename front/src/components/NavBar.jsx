@@ -45,7 +45,7 @@ function NavBar() {
             <Nav className="me-auto pt-2">
               <Link className="text-white m-3" to="/">Inicio</Link>
               <Link className="text-white m-3" to="product">Productos</Link>
-              <Link className="text-white m-3" to="event">Eventos</Link>
+              <Link className="text-white m-3" to="events">Eventos</Link>
               <Link className="text-white m-3" to="about">Nosotros</Link>
               <Link className="text-white m-3" to="contact">Contactos</Link>
             

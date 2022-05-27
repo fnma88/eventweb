@@ -10,6 +10,7 @@ import Login from "./views/Login";
 import Product from "./views/Product";
 import Footer from "./components/Footer";
 import NavBar from "./components/NavBar";
+import Events from "./views/Events";
 import Event from "./views/Event";
 import AboutUs from "./views/AboutUs";
 import Contact from "./views/Contact";
@@ -24,6 +25,7 @@ function App() {
           <Route path="/blog" element={<Blog />} />
           <Route path="/elements" element={<Elements />} />
           {/* <Route path="/chart" element={<Cart />} /> */}
+          <Route path="/events" element={<Events />} />
           <Route path="/event" element={<Event />} />
           <Route path="/login" element={<Login />} />
           <Route path="/product" element={<Product />} />
