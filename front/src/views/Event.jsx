@@ -1,6 +1,10 @@
 import React from "react";
+import EventInfor from "../components/EventInfor";
+import Ticket from "../components/Ticket";
+import TicketEvent from "../components/TicketEvent";
 
 function Event() {
+  let image = "img/bg-img/e1.jpg";
   return (
     <>
       <div
@@ -16,98 +20,37 @@ function Event() {
       {/* <!-- ##### Eventos Area Start ##### --> */}
       <div className="Eventos-area section-padding-100">
         <div className="container">
-          <div className="row">
-            {/* <!-- Single Event Area --> */}
-            <div className="col-12 col-md-6 col-lg-6">
-              <div className="single-event-area mb-30">
-                <div className="event-thumbnail">
-                  <img src="img/bg-img/e1.jpg" alt="" />
-                </div>
-                <img class="ta-maphilight" src="https://tickantel.cdn.antel.net.uy/media/Distribucion/40000906/d08993b9_3f73_4e50_88f0_ea54766aef72.jpg"/>
-              </div>
+          <div className="row d-flex justify-content-center">
+            <div className="col m-1">
+              <TicketEvent imageTicket={image} />
             </div>
-            <div className="col-12 col-md-6 col-lg-6">
-              <div className="row">
-                <div className="single-event-area mb-30">
-                  <div className="event-thumbnail"></div>
-                  <div className="event-text">
-                    <h4>Tipo de entrada </h4>
-                    <div className="event-meta-data">
-                      <a href="#" className="event-place">
-                        COSTO
-                      </a>
-                      <a href="#" className="event-date">
-                        $100
-                      </a>
-                    </div>
-                    <a href="#" className="btn see-more-btn">
-                      Agregar a carrito
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div className="row">
-                <div className="single-event-area mb-30">
-                  <div className="event-thumbnail"></div>
-                  <div className="event-text">
-                    <h4>Tipo de entrada </h4>
-                    <div className="event-meta-data">
-                      <a href="#" className="event-place">
-                        COSTO
-                      </a>
-                      <a href="#" className="event-date">
-                        $100
-                      </a>
-                    </div>
-                    <a href="#" className="btn see-more-btn">
-                      Agregar a carrito
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div className="row">
-                <div className="single-event-area mb-30">
-                  <div className="event-thumbnail"></div>
-                  <div className="event-text">
-                    <h4>Tipo de entrada </h4>
-                    <div className="event-meta-data">
-                      <a href="#" className="event-place">
-                        COSTO
-                      </a>
-                      <a href="#" className="event-date">
-                        $100
-                      </a>
-                    </div>
-                    <a href="#" className="btn see-more-btn">
-                      Agregar a carrito
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div className="row">
-                <div className="single-event-area mb-30">
-                  <div className="event-thumbnail"></div>
-                  <div className="event-text">
-                    <h4>Tipo de entrada </h4>
-                    <div className="event-meta-data">
-                      <a href="#" className="event-place">
-                        COSTO
-                      </a>
-                      <a href="#" className="event-date">
-                        $100
-                      </a>
-                    </div>
-                    <a href="#" className="btn see-more-btn">
-                      Agregar a carrito
-                    </a>
-                  </div>
-                </div>
-              </div>
-
+            <div className="col m-1">
+              <EventInfor fecha={"31-10"} />
+              <Ticket />
+              <Ticket />
+            </div>
+            <div className="col m-1">
+              <EventInfor fecha={"30-10"} />
+              <Ticket />
+              <Ticket />
+            </div>
+          </div>
+          <div className="row mt-5">
+            <div className="d-flex justify-content-center">
+              <img
+                class=""
+                src="https://tickantel.cdn.antel.net.uy/media/Distribucion/40000906/d08993b9_3f73_4e50_88f0_ea54766aef72.jpg"
+              />
             </div>
           </div>
         </div>
       </div>
+      <div className="container">
+        <div className="row w-75">
+          <div className="col-12  d-flex justify-content-end"></div>
+        </div>
+      </div>
+
       {/* <!-- ##### Eventos Area End ##### --> */}
 
       {/* <!-- ##### Nosotrosletter & Testimonials Area Start ##### --> */}
