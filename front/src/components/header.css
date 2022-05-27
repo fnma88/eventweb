@@ -13,6 +13,6 @@
 }
 .activeNav2 {
   background-color: black;
-  --bs--gutter-x: 2rem;
+  --bs--gutter-x: 3rem;
   /* margin-top: 10px; */
 }
