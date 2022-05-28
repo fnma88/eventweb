@@ -83,6 +83,7 @@ img {
   position: relative;
   margin: 25px;
   border: 1px dashed #aaa;
+  top: 30px;
 }
 .holes-lower:before,
 .holes-lower:after {
@@ -94,11 +95,11 @@ img {
   border-radius: 50%;
 }
 .holes-lower:before {
-  top: 60px;
+  top: 50px;
   left: -40px;
 }
 .holes-lower:after {
-  top: 60px;
+  top: 50px;
   left: 240px;
 }
 .holes-lower2 {

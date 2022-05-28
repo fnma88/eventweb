@@ -8,7 +8,7 @@ function TicketEvent({ imageTicket }) {
         <div class="holes-top"></div>
         <div class="titleTicket">
           <p class="cinema">PRODUCTORA</p>
-          <p class="movie-title">NOMBRE EVENTO</p>
+          <p class="movie-title">NOMBRE ARTISTA</p>
         </div>
         <div class="event-thumbnailfortTicket">
           <img src={imageTicket} alt="" />

@@ -1,16 +1,16 @@
 import React from "react";
-function Ticket() {
+function Ticket({ costo, tipo }) {
   return (
     <div className="single-event-area my-3">
       <div className=""></div>
       <div className="event-text">
-        <h4>Tipo de entrada </h4>
+        <h4>{tipo} </h4>
         <div className="event-meta-data">
           <a href="#" className="event-place">
             COSTO
           </a>
           <a href="#" className="event-date">
-            $100
+            {costo}
           </a>
         </div>
         <a href="#" className="btn see-more-btn">
