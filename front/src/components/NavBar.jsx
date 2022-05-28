@@ -65,7 +65,7 @@ function NavBar() {
             </div>
             <div className="col m-3">
               <Link eventKey={2} className="text-white" to="/cart">
-                <i class="fa-solid fa-cart-shopping">2</i>
+                <i className="fa-solid fa-cart-shopping">2</i>
               </Link>
             </div>
           </div>

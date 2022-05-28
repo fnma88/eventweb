@@ -4,18 +4,18 @@ import "./ticketEvent.css";
 function TicketEvent({ imageTicket }) {
   return (
     <>
-      <div class="ticket">
-        <div class="holes-top"></div>
-        <div class="titleTicket">
-          <p class="cinema">PRODUCTORA</p>
-          <p class="movie-title">NOMBRE ARTISTA</p>
+      <div className="ticket">
+        <div className="holes-top"></div>
+        <div className="titleTicket">
+          <p className="cinema">PRODUCTORA</p>
+          <p className="movie-title">NOMBRE ARTISTA</p>
         </div>
-        <div class="event-thumbnailfortTicket">
+        <div className="event-thumbnailfortTicket">
           <img src={imageTicket} alt="" />
         </div>
 
-        <div class="holes-lower"></div>
-        <div class="serial"></div>
+        <div className="holes-lower"></div>
+        <div className="serial"></div>
       </div>
     </>
   );

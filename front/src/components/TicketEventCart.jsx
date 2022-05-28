@@ -12,25 +12,29 @@ function TicketEvent({ imageTicket }) {
               CATEGORIA: <span>GOLD</span>
             </span>
           </div>
-          <div class="input-group mb-3 ms-3">
-            <span class="input-group-text"> $</span>
-            <span class="input-group-text">00</span>
+          <div className="rowinput-group mb-3 ms-3 d-flex justify-content-center ">
+            <span className="input-group-text"> $</span>
+            <span className="input-group-text">00</span>
           </div>
-          <div class="input-group mb-3 ms-3">
-            <span class="input-group-text"> CTDA</span>
-            <span class="input-group-text">00</span>
+          <div className="input-group mb-3 ms-3">
+            <span className="input-group-text"> CTDA</span>
+            <span className="input-group-text">00</span>
+            <button className=" input-group-text">-</button>
+            <button className="input-group-text">+</button>
           </div>
+          <div className="holes-lowerdashed col"></div>
         </div>
+
         <div className="holes-lower2"></div>
         <div className="col d-flex align-items-center">
           <div className="row">
-            <div class="input-group mb-3">
-              <span class="input-group-text" id="basic-addon1">
+            <div className="input-group mb-3">
+              <span className="input-group-text" id="basic-addon1">
                 @
               </span>
               <input
                 type="email"
-                class="form-control"
+                className="form-control"
                 placeholder="CORREO"
                 aria-label="CORREO"
                 aria-describedby="basic-addon1"
@@ -42,7 +46,6 @@ function TicketEvent({ imageTicket }) {
           </div>
         </div>
       </div>
-      <div className="holes-lowerdashed"></div>
     </>
   );
 }

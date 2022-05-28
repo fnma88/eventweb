@@ -34,10 +34,7 @@ function Event() {
             </div>
             <div className="col m-1 ">
               <EventInfor fecha={"29-10"} />
-              <img
-                class=""
-                src="https://tickantel.cdn.antel.net.uy/media/Distribucion/40000906/d08993b9_3f73_4e50_88f0_ea54766aef72.jpg"
-              />
+              <img src="https://tickantel.cdn.antel.net.uy/media/Distribucion/40000906/d08993b9_3f73_4e50_88f0_ea54766aef72.jpg" />
             </div>
           </div>
           <div className="row mt-5">
