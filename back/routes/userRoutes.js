@@ -1,13 +1,13 @@
 const express = require("express");
 const userRouter = express.Router();
 const userController = require("../controllers/userController");
-const checkJwt = require("express-jwt");
+const { expressjwt: expressJwt } = require("express-jwt");
 
 // Store a newly created resource in storage.
 
 userRouter.post("/", userController.store);
 //******    Midlleware para rutas privadas ************ */
-userRouter.use(checkJwt({ secret: process.env.ACCESS_TOKEN_SECRET, algorithms: ["HS256"] }));
+userRouter.use(expressJwt({ secret: process.env.ACCESS_TOKEN_SECRET, algorithms: ["HS256"] }));
 //*****    logout           ************ */
 userRouter.post("/logout", userController.deleteToken);
 //const tokenExist = require("../middlewares/tokenExist");
