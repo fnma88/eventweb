@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 import { Container, Col, Row, Card } from "react-bootstrap";
 import NavBarAdmin from "../components/NavBarAdmin";
 
-function ArticleCreate() {
+function TicketCreate() {
   const navigate = useNavigate();
   const userLogged = useSelector((state) => state.user);
   const [warning, setWarning] = React.useState(null);
@@ -13,11 +13,7 @@ function ArticleCreate() {
     name: "",
     description: "",
     price: "",
-    sizecc: "",
     stock: "",
-    category: "",
-    ibus: "",
-    image: "",
   });
   console.log(formFields);
 
@@ -29,7 +25,7 @@ function ArticleCreate() {
     const response = await axios(
       {
         method: "post",
-        url: `${process.env.REACT_APP_API_URL}/articles`,
+        url: `${process.env.REACT_APP_API_URL}/tickets`,
         headers: {
           Authorization: "Bearer " + userLogged.token,
         },
@@ -42,26 +38,26 @@ function ArticleCreate() {
       }
     );
     if (response.status === 200) {
-      navigate("/articulos");
+      navigate("/tickets");
     } else {
       setWarning(response.data.msg);
     }
   };
 
-  const [categories, setcategories] = React.useState(null);
+  const [event, setEvent] = React.useState(null);
 
   React.useEffect(() => {
-    const getCategories = async () => {
+    const getevent = async () => {
       const response = await axios.get(
-        `${process.env.REACT_APP_API_URL}/categories`
+        `${process.env.REACT_APP_API_URL}/event`
       );
-      setcategories(response.data);
+      setEvent(response.data);
     };
-    getCategories();
+    getevent();
   }, []);
 
   return (
-    categories && (
+    event && (
       <>
         <NavBarAdmin />
         <Container>
@@ -71,7 +67,7 @@ function ArticleCreate() {
               <Card className="">
                 <Card.Header>
                   <Card.Title>
-                    <h1>Crear nuevo articulo</h1>
+                    <h1>Crear nuevo ticket</h1>
                   </Card.Title>
                 </Card.Header>
                 <Card.Body className="d-flex justify-content-center">
@@ -121,25 +117,6 @@ function ArticleCreate() {
             Imagen
           </label>
           <input className=" form-control" id="image" type="file" /> */}
-                    <label className="mt-3 form-label" htmlFor="image">
-                      Imagen "PLACEHOLDER.jpg"
-                    </label>
-                    <input
-                      placeholder="PLACEHOLDER.jpg"
-                      onChange={(ev) => {
-                        setFormFields({
-                          ...formFields,
-                          image: ev.target.value,
-                        });
-                      }}
-                      value={formFields.image}
-                      //defaultValue="PLACEHOLDER.jpg"
-                      // readOnly
-                      className=" form-control"
-                      id="image"
-                      type="text"
-                      required
-                    />
 
                     <label className="mt-3 form-label" htmlFor="price">
                       Precio
@@ -154,23 +131,6 @@ function ArticleCreate() {
                       value={formFields.price}
                       className=" form-control"
                       id="price"
-                      type="number"
-                      required
-                    />
-
-                    <label className="mt-3 form-label" htmlFor="sicezz">
-                      Volumen en cc
-                    </label>
-                    <input
-                      onChange={(ev) => {
-                        setFormFields({
-                          ...formFields,
-                          sizecc: ev.target.value,
-                        });
-                      }}
-                      value={formFields.sizecc}
-                      className=" form-control"
-                      id="sizecc"
                       type="number"
                       required
                     />
@@ -192,57 +152,43 @@ function ArticleCreate() {
                       required
                     />
 
-                    <label className="mt-3 form-label" htmlFor="category">
-                      Categoría
+                    <label className="mt-3 form-label" htmlFor="event">
+                      Evento
                     </label>
                     {/* <input
                 onChange={(ev) => {
-                  setFormFields({ ...formFields, category: ev.target.value });
+                  setFormFields({ ...formFields, event: ev.target.value });
                 }}
-                value={formFields.category}
+                value={formFields.event}
                 className=" form-control"
-                id="category"
+                id="event"
                 type="text"
                 required
               /> */}
                     <select
                       className="w-25 ms-3 fs-4 form-control border "
                       aria-label="filter"
-                      id="category"
+                      id="event"
                       type="text"
                       onChange={(ev) => {
                         {
                           setFormFields({
                             ...formFields,
-                            category: ev.target.value,
+                            event: ev.target.value,
                           });
                         }
                       }}
                     >
-                      {categories.map((category) => (
+                      {event.map((event) => (
                         <option
                           className="form-control"
-                          value={category.name}
-                          key={category.id}
+                          value={event.name}
+                          key={event.id}
                         >
-                          {category.name}
+                          {event.name}
                         </option>
                       ))}
                     </select>
-
-                    <label className="mt-3 form-label" htmlFor="ibus">
-                      Ibus
-                    </label>
-                    <input
-                      onChange={(ev) => {
-                        setFormFields({ ...formFields, ibus: ev.target.value });
-                      }}
-                      value={formFields.ibus}
-                      className=" form-control"
-                      id="ibus"
-                      type="text"
-                      required
-                    />
                     {warning && <p className="text-danger">{warning}</p>}
                     <button className="btn btn-success mt-3" type="submit">
                       Guardar cambios
@@ -261,4 +207,4 @@ function ArticleCreate() {
   );
 }
 
-export default ArticleCreate;
+export default TicketCreate;

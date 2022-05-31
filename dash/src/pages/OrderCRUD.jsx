@@ -50,6 +50,7 @@ function OrderCRUD() {
                     >
                       <thead className="text-primary">
                         <tr>
+                          <th scope="col">Email Usuario</th>
                           <th scope="col">Fecha de compra</th>
                           <th scope="col">Estado</th>
                           <th scope="col">id</th>
@@ -58,6 +59,7 @@ function OrderCRUD() {
                       <tbody>
                         {orders.map((order) => (
                           <tr key={order._id}>
+                            <td>{order.useremail}</td>
                             <td>{order.createdAt.slice(0, 10)}</td>
                             <td>{order.status}</td>
                             <td scope="row">{order._id}</td>

@@ -4,18 +4,18 @@ import Login from "./pages/Login";
 import Admin from "./pages/Admin";
 import { useSelector } from "react-redux";
 import { ToastContainer } from "react-toastify";
-import ArticleCRUD from "./pages/ArticleCRUD";
+import TicketCRUD from "./pages/TicketCRUD";
 import UserCRUD from "./pages/UserCRUD";
-import CategoryCRUD from "./pages/CategoryCRUD";
+import EventCRUD from "./pages/EventCRUD";
 import OrderCRUD from "./pages/OrderCRUD";
-import EditArticle from "./pages/EditArticle";
+import EditTicket from "./pages/EditTicket";
 import EditUser from "./pages/EditUser";
-import EditCategory from "./pages/EditCategory";
+import EditEvent from "./pages/EditEvent";
 import Statistics from "./pages/Statistics";
 import EditOrder from "./pages/EditOrder";
 import UserCreate from "./pages/UserCreate";
-import ArticleCreate from "./pages/ArticleCreate";
-import CategoryCreate from "./pages/CategoryCreate";
+import TicketCreate from "./pages/TicketCreate";
+import EventCreate from "./pages/EventCreate";
 
 function App() {
   const loggedUser = useSelector((state) => state.user);
@@ -29,20 +29,20 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/admin" element={<Admin />} />
           {/* pages */}
-          <Route path="/articulos" element={<ArticleCRUD />} />
+          <Route path="/tickets" element={<TicketCRUD />} />
           <Route path="/usuarios" element={<UserCRUD />} />
-          <Route path="/categorias" element={<CategoryCRUD />} />
+          <Route path="/events" element={<EventCRUD />} />
           <Route path="/ordenes" element={<OrderCRUD />} />
           <Route path="/estadisticas" element={<Statistics />} />
           {/* edit pages */}
-          <Route path="/articulos/:id" element={<EditArticle />} />
+          <Route path="/tickets/:id" element={<EditTicket />} />
           <Route path="/usuarios/:username" element={<EditUser />} />
-          <Route path="/categorias/:name" element={<EditCategory />} />
+          <Route path="/events/:name" element={<EditEvent />} />
           <Route path="/ordenes/:id" element={<EditOrder />} />
           {/* create pages */}
           <Route path="/usuarios/nuevo" element={<UserCreate />} />
-          <Route path="/articulos/nuevo" element={<ArticleCreate />} />
-          <Route path="/categorias/nuevo" element={<CategoryCreate />} />
+          <Route path="/tickets/nuevo" element={<TicketCreate />} />
+          <Route path="/events/nuevo" element={<EventCreate />} />
         </Routes>
       ) : (
         <Routes>

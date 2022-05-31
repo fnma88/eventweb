@@ -2,40 +2,39 @@ import React from "react";
 import NavBarAdmin from "../components/NavBarAdmin";
 import axios from "axios";
 import { Table, Container, Col, Row, Card } from "react-bootstrap";
-import ButtonDeleteArticle from "../components/ButtonDeleteArticle";
 
-function ArticleCRUD() {
-  const [articles, setArticles] = React.useState(null);
+function EventCRUD() {
+  const [event, setEvent] = React.useState(null);
 
   React.useEffect(() => {
-    const getArticles = async () => {
+    const getEvent = async () => {
       const response = await axios.get(
-        `${process.env.REACT_APP_API_URL}/articles`
+        `${process.env.REACT_APP_API_URL}/event`
       );
-      setArticles(response.data);
+      setEvent(response.data);
     };
-    getArticles();
+    getEvent();
   }, []);
 
   return (
-    articles && (
+    event && (
       <>
         <NavBarAdmin />
         <Container>
-          <div className="">
+          <div className="content">
             <Row>
               <Col md="12">
                 <Card>
                   <Card.Header>
                     <Card.Title
-                      tag="h4"
                       className="d-flex justify-content-between align-items-center"
+                      tag="h4"
                     >
-                      Articulos{" "}
-                      <a href="articulos/nuevo" className="btn btn-primary">
-                        Agregar articulo
+                      Eventos{" "}
+                      <a href="evento/nuevo" className="btn btn-primary">
+                        Agregar evento
                       </a>
-                    </Card.Title>{" "}
+                    </Card.Title>
                   </Card.Header>
                   <Card.Body>
                     <Table
@@ -47,33 +46,32 @@ function ArticleCRUD() {
                     >
                       <thead className="text-primary">
                         <tr>
-                          <th scope="col">Id</th>
                           <th scope="col">Nombre</th>
-                          <th scope="col">Categoria</th>
-                          <th scope="col"> Tamaño en CC</th>
-                          <th scope="col">Stock</th>
+                          <th scope="col">Descripcion</th>
+                          <th scope="col">Fecha</th>
+                          <th scope="col">Hora</th>
+                          <th scope="col">Lugar</th>
+                          <th scope="col">Imagen</th>
+                          <th scope="col">Locaciones</th>
                         </tr>
                       </thead>
                       <tbody>
-                        {articles.map((article) => (
-                          <tr key={article.id}>
-                            <th scope="row">{article.id}</th>
-                            <td>{article.name}</td>
-                            <td>{article.category}</td>
-                            <td>{article.sizecc}</td>
-                            <td>{article.stock}</td>
+                        {event.map((event) => (
+                          <tr scope="row" key={event._id}>
+                            <td>{event.name}</td>
+                            <td>{event.desription}</td>
+                            <td>{event.time}</td>
+                            <td>{event.place}</td>
+                            <td>{event.headerimage}</td>
+                            <td>{event.eventmap}</td>
                             <td>
                               <a
                                 className="btn btn-outline-success"
                                 rel="stylesheet"
-                                href={`/articulos/${article.id}`}
+                                href={`/event/${event.name}`}
                               >
                                 <i className="fa-solid fa-pen"></i>
                               </a>
-                              <ButtonDeleteArticle
-                                setArticles={setArticles}
-                                id={article.id}
-                              />
                             </td>
                           </tr>
                         ))}
@@ -90,4 +88,4 @@ function ArticleCRUD() {
   );
 }
 
-export default ArticleCRUD;
+export default EventCRUD;

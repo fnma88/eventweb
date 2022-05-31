@@ -3,18 +3,18 @@ import axios from "axios";
 import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 
-function ButtonDeleteArticle({ id, setArticles }) {
+function ButtonDeleteArticle({ id, setTicket }) {
   const navigate = useNavigate();
   const userLogged = useSelector((state) => state.user);
   const [warning, setWarning] = React.useState(null);
 
   const handleClick = async (ev) => {
     ev.preventDefault();
-    setArticles((prev) => prev.filter((article) => article.id !== id));
+    setTicket((prev) => prev.filter((ticket) => ticket.id !== id));
     const response = await axios(
       {
         method: "delete",
-        url: `${process.env.REACT_APP_API_URL}/articles/${id}`,
+        url: `${process.env.REACT_APP_API_URL}/tickets/${id}`,
         headers: {
           Authorization: "Bearer " + userLogged.token,
         },

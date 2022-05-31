@@ -80,6 +80,10 @@ function EditOrder() {
                       {order.createdAt.slice(0, 10)}
                     </p>
                     <label className="mt-3  form-label" htmlFor="status">
+                      Usuario
+                    </label>
+                    <p className=" form-control">{order.useremail}</p>
+                    <label className="mt-3  form-label" htmlFor="status">
                       Estado
                     </label>
                     <input

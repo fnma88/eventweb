@@ -2,39 +2,40 @@ import React from "react";
 import NavBarAdmin from "../components/NavBarAdmin";
 import axios from "axios";
 import { Table, Container, Col, Row, Card } from "react-bootstrap";
+import ButtonDeleteticket from "../components/ButtonDeleteticket";
 
-function CategoryCRUD() {
-  const [categories, setcategories] = React.useState(null);
+function TicketCRUD() {
+  const [ticket, setTicket] = React.useState(null);
 
   React.useEffect(() => {
-    const getCategories = async () => {
+    const getticket = async () => {
       const response = await axios.get(
-        `${process.env.REACT_APP_API_URL}/categories`
+        `${process.env.REACT_APP_API_URL}/ticket`
       );
-      setcategories(response.data);
+      setTicket(response.data);
     };
-    getCategories();
+    getticket();
   }, []);
 
   return (
-    categories && (
+    ticket && (
       <>
         <NavBarAdmin />
         <Container>
-          <div className="content">
+          <div className="">
             <Row>
               <Col md="12">
                 <Card>
                   <Card.Header>
                     <Card.Title
-                      className="d-flex justify-content-between align-items-center"
                       tag="h4"
+                      className="d-flex justify-content-between align-items-center"
                     >
-                      Categorias{" "}
-                      <a href="categorias/nuevo" className="btn btn-primary">
-                        Agregar categoria
+                      Tickets{" "}
+                      <a href="articulos/nuevo" className="btn btn-primary">
+                        Agregar Tickets
                       </a>
-                    </Card.Title>
+                    </Card.Title>{" "}
                   </Card.Header>
                   <Card.Body>
                     <Table
@@ -47,22 +48,33 @@ function CategoryCRUD() {
                       <thead className="text-primary">
                         <tr>
                           <th scope="col">Nombre</th>
-                          <th scope="col">id</th>
+                          <th scope="col">Evento</th>
+                          <th scope="col"> Descripcion</th>
+                          <th scope="col"> Price</th>
+                          <th scope="col">Stock</th>
                         </tr>
                       </thead>
                       <tbody>
-                        {categories.map((category) => (
-                          <tr scope="row" key={category._id}>
-                            <td>{category.name}</td>
-                            <td>{category._id}</td>
+                        {ticket.map((ticket) => (
+                          <tr key={ticket.id}>
+                            <th scope="row">{ticket.id}</th>
+                            <td>{ticket.name}</td>
+                            <td>{ticket.event}</td>
+                            <td>{ticket.description}</td>
+                            <td>{ticket.price}</td>
+                            <td>{ticket.stock}</td>
                             <td>
                               <a
                                 className="btn btn-outline-success"
                                 rel="stylesheet"
-                                href={`/categorias/${category.name}`}
+                                href={`/ticket/${ticket.id}`}
                               >
                                 <i className="fa-solid fa-pen"></i>
                               </a>
+                              <ButtonDeleteticket
+                                setTicket={setTicket}
+                                id={ticket.id}
+                              />
                             </td>
                           </tr>
                         ))}
@@ -79,4 +91,4 @@ function CategoryCRUD() {
   );
 }
 
-export default CategoryCRUD;
+export default TicketCRUD;

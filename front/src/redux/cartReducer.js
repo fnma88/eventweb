@@ -3,23 +3,23 @@ function cartReducer(cart = [], action) {
     case "ADD":
       if (
         cart.length > 0 &&
-        cart.some((article) => article.name === action.payload.name)
+        cart.some((ticket) => ticket.name === action.payload.name)
       ) {
-        return cart.map((article) => {
-          if (article.name === action.payload.name) {
+        return cart.map((ticket) => {
+          if (ticket.name === action.payload.name) {
             return {
-              ...article,
-              quantity: article.quantity + action.payload.quantity,
+              ...ticket,
+              quantity: ticket.quantity + action.payload.quantity,
             };
           }
-          return article;
+          return ticket;
         });
       }
       return [...cart, action.payload];
 
     case "DELETE":
       const newCart = cart.filter(
-        (article) => article.name !== action.payload.name
+        (ticket) => ticket.name !== action.payload.name
       );
       return newCart;
 
