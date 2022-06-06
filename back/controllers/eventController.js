@@ -66,3 +66,10 @@ async function destroy(req, res) {
     res.status(500).json({ message: error });
   }
 }
+module.exports = {
+  index,
+  show,
+  create,
+  update,
+  destroy,
+};
