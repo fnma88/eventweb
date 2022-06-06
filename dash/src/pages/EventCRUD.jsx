@@ -9,7 +9,7 @@ function EventCRUD() {
   React.useEffect(() => {
     const getEvent = async () => {
       const response = await axios.get(
-        `${process.env.REACT_APP_API_URL}/event`
+        `${process.env.REACT_APP_API_URL}/events`
       );
       setEvent(response.data);
     };
@@ -31,7 +31,7 @@ function EventCRUD() {
                       tag="h4"
                     >
                       Eventos{" "}
-                      <a href="evento/nuevo" className="btn btn-primary">
+                      <a href="events/nuevo" className="btn btn-primary">
                         Agregar evento
                       </a>
                     </Card.Title>
@@ -68,7 +68,7 @@ function EventCRUD() {
                               <a
                                 className="btn btn-outline-success"
                                 rel="stylesheet"
-                                href={`/event/${event.name}`}
+                                href={`/events/${event.name}`}
                               >
                                 <i className="fa-solid fa-pen"></i>
                               </a>

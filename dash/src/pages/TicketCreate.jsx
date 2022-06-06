@@ -49,7 +49,7 @@ function TicketCreate() {
   React.useEffect(() => {
     const getevent = async () => {
       const response = await axios.get(
-        `${process.env.REACT_APP_API_URL}/event`
+        `${process.env.REACT_APP_API_URL}/events`
       );
       setEvent(response.data);
     };
@@ -195,7 +195,11 @@ function TicketCreate() {
                     </button>
                   </form>
                 </Card.Body>
-                <a className="mt-3 btn btn-danger" href="/articulos">
+                <a
+                  className="mt-3 btn btn-danger"
+                  href="/tickets
+                "
+                >
                   Ir atrás
                 </a>
               </Card>{" "}

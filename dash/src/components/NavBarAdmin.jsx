@@ -62,17 +62,14 @@ function NavBarAdmin() {
               <Nav className="justify-content-end flex-grow-1 pe-3">
                 <ul className="dashboard__menu">
                   <li id="products" className="dashboard__menu__item">
-                    <a href="/articulos" className="dashboard__menu__item--btn">
-                      Articulos
+                    <a href="/events" className="dashboard__menu__item--btn">
+                      Eventos
                       <span className="right-arrow"></span>
                     </a>
                   </li>
                   <li id="articles" className="dashboard__menu__item">
-                    <a
-                      href="/categorias"
-                      className="dashboard__menu__item--btn"
-                    >
-                      Categorias
+                    <a href="/usuarios" className="dashboard__menu__item--btn">
+                      Usuarios
                       <span className="right-arrow"></span>
                     </a>
                   </li>
@@ -81,11 +78,12 @@ function NavBarAdmin() {
                       Ordenes
                       <span className="right-arrow"></span>
                     </a>
-                    <div className="dashboard__submenu">
-                      <a className="dashboard__submenu--btn" href="#pages">
-                        Todas las ordenes
-                      </a>
-                    </div>
+                  </li>
+                  <li id="pages" className="dashboard__menu__item">
+                    <a href="/tickets" className="dashboard__menu__item--btn">
+                      Tickets
+                      <span className="right-arrow"></span>
+                    </a>
                   </li>
                   <li id="users" className="dashboard__menu__item">
                     <a href="/usuarios" className="dashboard__menu__item--btn">

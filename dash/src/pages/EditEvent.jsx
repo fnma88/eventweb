@@ -17,7 +17,7 @@ function EditEvent() {
   React.useEffect(() => {
     const getevent = async () => {
       const response = await axios.get(
-        `${process.env.REACT_APP_API_URL}/event/${params.name}`
+        `${process.env.REACT_APP_API_URL}/events/${params.name}`
       );
       setEvent(response.data);
     };
@@ -32,7 +32,7 @@ function EditEvent() {
     const response = await axios(
       {
         method: "patch",
-        url: `${process.env.REACT_APP_API_URL}/event/${event.id}`,
+        url: `${process.env.REACT_APP_API_URL}/events/${event.id}`,
         headers: {
           Authorization: "Bearer " + userLogged.token,
         },
@@ -45,7 +45,7 @@ function EditEvent() {
       }
     );
     if (response.status === 200) {
-      navigate("/event");
+      navigate("/events");
     } else {
       setWarning(response.data.msg);
     }
@@ -194,7 +194,7 @@ function EditEvent() {
                     </button>
                   </form>
                 </Card.Body>
-                <a className="mt-3 btn btn-danger" href="/event">
+                <a className="mt-3 btn btn-danger" href="/events">
                   Ir atrás
                 </a>
               </Card>{" "}

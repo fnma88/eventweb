@@ -27,7 +27,7 @@ function EventCreate() {
     const response = await axios(
       {
         method: "post",
-        url: `${process.env.REACT_APP_API_URL}/event`,
+        url: `${process.env.REACT_APP_API_URL}/events`,
         headers: {
           Authorization: "Bearer " + userLogged.token,
         },
@@ -40,7 +40,7 @@ function EventCreate() {
       }
     );
     if (response.status === 200) {
-      navigate("/event");
+      navigate("/events");
     } else {
       setWarning(response.data.msg);
     }
@@ -167,7 +167,7 @@ function EventCreate() {
                   </button>
                 </form>
               </Card.Body>
-              <a className="mt-3 btn btn-danger" href="/event">
+              <a className="mt-3 btn btn-danger" href="/events">
                 Ir atrás
               </a>
             </Card>

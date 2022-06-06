@@ -10,7 +10,7 @@ function TicketCRUD() {
   React.useEffect(() => {
     const getticket = async () => {
       const response = await axios.get(
-        `${process.env.REACT_APP_API_URL}/ticket`
+        `${process.env.REACT_APP_API_URL}/tickets`
       );
       setTicket(response.data);
     };
@@ -32,7 +32,7 @@ function TicketCRUD() {
                       className="d-flex justify-content-between align-items-center"
                     >
                       Tickets{" "}
-                      <a href="articulos/nuevo" className="btn btn-primary">
+                      <a href="tickets/nuevo" className="btn btn-primary">
                         Agregar Tickets
                       </a>
                     </Card.Title>{" "}
@@ -67,7 +67,7 @@ function TicketCRUD() {
                               <a
                                 className="btn btn-outline-success"
                                 rel="stylesheet"
-                                href={`/ticket/${ticket.id}`}
+                                href={`/tickets/${ticket.id}`}
                               >
                                 <i className="fa-solid fa-pen"></i>
                               </a>
