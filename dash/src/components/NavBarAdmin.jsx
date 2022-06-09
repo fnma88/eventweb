@@ -85,12 +85,7 @@ function NavBarAdmin() {
                       <span className="right-arrow"></span>
                     </a>
                   </li>
-                  <li id="users" className="dashboard__menu__item">
-                    <a href="/usuarios" className="dashboard__menu__item--btn">
-                      Usuarios
-                      <span className="right-arrow"></span>
-                    </a>
-                  </li>
+
                   <li id="users" className="dashboard__menu__item">
                     <a
                       href="/estadisticas"

@@ -122,7 +122,7 @@ function EventCreate() {
                   <input
                     required
                     onChange={(ev) => {
-                      setFormFields({ ...formFields, name: ev.target.value });
+                      setFormFields({ ...formFields, place: ev.target.value });
                     }}
                     value={formFields.place}
                     className=" form-control"
@@ -143,7 +143,7 @@ function EventCreate() {
                     value={formFields.headerimage}
                     className=" form-control"
                     id="headerimage"
-                    type="file"
+                    // type="file"
                   />
                   <label className="mt-3  form-label" htmlFor="eventmap">
                     Foto locaciones
@@ -156,10 +156,10 @@ function EventCreate() {
                         eventmap: ev.target.value,
                       });
                     }}
-                    value={formFields.name}
+                    value={formFields.eventmap}
                     className=" form-control"
                     id="eventmap"
-                    type="file"
+                    // type="file"
                   />
                   {warning && <p className="text-danger">{warning}</p>}
                   <button className="btn btn-success mt-3" type="submit">

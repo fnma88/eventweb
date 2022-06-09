@@ -15,9 +15,11 @@ userRouter.post("/logout", userController.deleteToken);
 userRouter.patch("/:username", userController.update);
 userRouter.get("/:username", userController.show);
 
-const isAdmin = require("../middlewares/isAdmin.js");
+// Hay un tema con la verificacion de si es o no admin
+
+// const isAdmin = require("../middlewares/isAdmin.js");
 //******    Ruta obtener user ************ */
-userRouter.use(isAdmin);
+// userRouter.use(isAdmin);
 
 // Display a listing of the resource.
 userRouter.get("/", userController.index);

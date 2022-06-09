@@ -104,7 +104,7 @@ function EditEvent() {
                       }}
                     />
                     <label className="mt-3 form-label" htmlFor="date">
-                      Nombre
+                      Fecha
                     </label>
                     <input
                       required
@@ -162,7 +162,7 @@ function EditEvent() {
                       value={event.headerimage}
                       className=" form-control"
                       id="headerimage"
-                      type="file"
+                      // type="file"
                       onChange={(ev) => {
                         setEvent({ ...event, headerimage: ev.target.value });
                         setEditEvent({
@@ -179,7 +179,7 @@ function EditEvent() {
                       value={event.eventmap}
                       className=" form-control"
                       id="eventmap"
-                      type="file"
+                      // type="file"
                       onChange={(ev) => {
                         setEvent({ ...event, eventmap: ev.target.value });
                         setEditEvent({

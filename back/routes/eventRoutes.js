@@ -12,7 +12,7 @@ eventRouter.get("/:name", eventController.show);
 //******    Midlleware para rutas privadas ************ */
 eventRouter.use(expressJwt({ secret: process.env.ACCESS_TOKEN_SECRET, algorithms: ["HS256"] }));
 //******    Ruta obtener event ************ */
-eventRouter.use(isAdmin);
+// eventRouter.use(isAdmin);
 //******    Ruta crear event ************ */
 eventRouter.post("/", eventController.create);
 //******    Ruta editar event ************ */
