@@ -52,7 +52,7 @@ function EventCRUD() {
                           <th scope="col">Hora</th>
                           <th scope="col">Lugar</th>
                           <th scope="col">Imagen</th>
-                          <th scope="col">Locaciones</th>
+                          <th scope="col">Editar</th>
                         </tr>
                       </thead>
                       <tbody>

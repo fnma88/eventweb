@@ -1,11 +1,11 @@
-const Event = require("../models/Event");
+const Event = require("../models/event.js");
 
 module.exports = async () => {
   await Event.deleteMany();
   const events = [];
 
   const eventA = new Event({
-    name: "Event A",
+    name: "EventA",
     description: "Event A de la gira A",
     date: "30/12/2022",
     time: "22:00",
@@ -16,7 +16,7 @@ module.exports = async () => {
   events.push(eventA);
 
   const eventB = new Event({
-    name: "Event B",
+    name: "EventB",
     description: "Event B de la gira B",
     date: "01/12/2022",
     time: "21:00",
@@ -27,7 +27,7 @@ module.exports = async () => {
   events.push(eventB);
 
   const eventC = new Event({
-    name: "Event C",
+    name: "EventC",
     description: "Event C de la gira C",
     date: "15/12/2022",
     time: "20:00",
