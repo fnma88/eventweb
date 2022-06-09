@@ -19,8 +19,41 @@ function Cart() {
         <div className="container">
           <div className="row">
             {/* <!-- Single Event Area --> */}
-            <div className="col-12 ">
+            <div className="col-6 ">
               <TicketEventCart />
+            </div>
+            <div className="col-6 ">
+              <div className="col d-flex align-items-center">
+                <div className="row">
+                  <div className="input-group mb-3">
+                    <span className="input-group-text" id="basic-addon1">
+                      Nombre
+                    </span>
+                    <input
+                      type="text"
+                      className="form-control"
+                      placeholder="CORREO"
+                      aria-label="CORREO"
+                      aria-describedby="basic-addon1"
+                    />
+                  </div>
+                  <div className="input-group mb-3">
+                    <span className="input-group-text" id="basic-addon1">
+                      @
+                    </span>
+                    <input
+                      type="email"
+                      className="form-control"
+                      placeholder="CORREO"
+                      aria-label="CORREO"
+                      aria-describedby="basic-addon1"
+                    />
+                  </div>
+                  <div className="text-center  text-dark">
+                    <span className="">Gracias por su compra</span>{" "}
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 

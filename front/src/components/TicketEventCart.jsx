@@ -28,20 +28,15 @@ function TicketEvent({ imageTicket }) {
         <div className="holes-lower2"></div>
         <div className="col d-flex align-items-center">
           <div className="row">
-            <div className="input-group mb-3">
-              <span className="input-group-text" id="basic-addon1">
-                @
+            <div className="text-center  text-white mb-3">
+              <span className="">
+                Fecha: <span>**/**/****</span>
               </span>
-              <input
-                type="email"
-                className="form-control"
-                placeholder="CORREO"
-                aria-label="CORREO"
-                aria-describedby="basic-addon1"
-              />
             </div>
-            <div className="text-center  text-white">
-              <span className="">Gracias por su compra</span>{" "}
+            <div className="text-center  text-white mb-3">
+              <span className="">
+                Hora: <span>##:##</span>
+              </span>
             </div>
           </div>
         </div>
