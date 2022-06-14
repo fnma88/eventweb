@@ -11,7 +11,7 @@ orderRouter.get("/", index);
 orderRouter.get("/:id", show);
 orderRouter.post("/", create);
 
-orderRouter.use(isAdmin);
+// orderRouter.use(isAdmin);
 
 orderRouter.patch("/:id", update);
 orderRouter.delete("/:id", destroy);
