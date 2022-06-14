@@ -10,14 +10,12 @@ userRouter.post("/", userController.store);
 userRouter.use(expressJwt({ secret: process.env.ACCESS_TOKEN_SECRET, algorithms: ["HS256"] }));
 //*****    logout           ************ */
 userRouter.post("/logout", userController.deleteToken);
-const tokenExist = require("../middlewares/tokenExist");
+// const tokenExist = require("../middlewares/tokenExist");
 
 userRouter.patch("/:username", userController.update);
 userRouter.get("/:username", userController.show);
 
-// Hay un tema con la verificacion de si es o no admin
-
-const isAdmin = require("../middlewares/isAdmin.js");
+// const isAdmin = require("../middlewares/isAdmin.js");
 //******    Ruta obtener user ************ */
 // userRouter.use(isAdmin);
 // Display a listing of the resource.
