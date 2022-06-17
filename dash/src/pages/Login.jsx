@@ -51,7 +51,7 @@ function Login() {
               // onBlur="field_blur(this, 'email');"
               autoComplete="username"
               className="email"
-              placeholder="admin@hackbier.com"
+              placeholder="admin@admin.com"
               value={data}
               onChange={(e) => setData(e.target.value)}
             />
